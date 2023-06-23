@@ -1,15 +1,3 @@
-<?php
-require_once __DIR__.'/boot.php';
-
-$user = null;
-
-if (check_auth()) {
-    // Получим данные пользователя по сохранённому идентификатору
-    $stmt = pdo()->prepare("SELECT * FROM `users` WHERE `id` = :id");
-    $stmt->execute(['id' => $_SESSION['user_id']]);
-    $user = $stmt->fetch(PDO::FETCH_ASSOC);
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,7 +18,7 @@ if (check_auth()) {
         <div class="container">
           <div class="header__content">
             <div class="header__logo">
-              <a href="index.php" class="header__logo">
+              <a href="index.html" class="header__logo">
               <div class="logo__img">
                   <img src="images/logo2.jpg" alt="Logo" />
                 </div>
@@ -49,11 +37,11 @@ if (check_auth()) {
               </div>
               <div class="nav__menu">
                 <ul class="nav__list">
-                  <li class="nav__item"><a href="aboutUs.php">О НАС</a></li>
-                  <li class="nav__item"><a href="models.php">МОДЕЛИ</a></li>
-                  <li class="nav__item"><a href="questions.php">ВОПРОСЫ</a></li>
-                  <li class="nav__item"><a href="service.php">УСЛУГИ</a></li>
-                  <li class="nav__item"><a href="contacts.php">КОНТАКТЫ</a></li>
+                  <li class="nav__item"><a href="aboutUs.html">О НАС</a></li>
+                  <li class="nav__item"><a href="models.html">МОДЕЛИ</a></li>
+                  <li class="nav__item"><a href="questions.html">ВОПРОСЫ</a></li>
+                  <li class="nav__item"><a href="service.html">УСЛУГИ</a></li>
+                  <li class="nav__item"><a href="contacts.html">КОНТАКТЫ</a></li>
                 </ul>
               </div>
             </div>
@@ -223,7 +211,7 @@ if (check_auth()) {
                       <div class="obj__title">Орхидея фаленопсис Блэк Перпл</div>
                       <div class="obj__info">
                       Орхидея фаленопсис Блэк Перпл - жемчужина - относится к семейству черных орхидей. Сортовая, небольшая, ароматная орхидея. Цветок латексный, не большой. Очень эффектная и редкая орхидея, с запахом парфюма. Из большого семейства фаленопсисов, подвид ароматная мультифлора.                      </div>
-                      <a href="models.php" class="obj__button">Узнать подробнее</a>
+                      <a href="models.html" class="obj__button">Узнать подробнее</a>
                     </div>
                   </div>
                   <div class="slider__obj">
@@ -237,7 +225,7 @@ if (check_auth()) {
 Во-первых, ему необходима постоянная влага (обильный полив и достаточная влажность в помещении). 
 Во-вторых, растение не переносит прямого солнца, резких перепадов температуры и перегрева.  Это растение подойдет как для дома, так и для офиса.  
                       </div>
-                      <a href="models.php" class="obj__button">Узнать подробнее</a>
+                      <a href="models.html" class="obj__button">Узнать подробнее</a>
                     </div>
                   </div>
                   <div class="slider__obj">
@@ -251,7 +239,7 @@ if (check_auth()) {
 Данный цветок эпифит, который имеет плотную розетку из листьев заостренной линейной формы. По краям листочки зубчатые. Внутри расположен цветонос с колючими краями.
 Период цветения приходится на конец зимы либо на середину лета. Цветок необыкновенно красивый, розового цвета с переливами.
                       </div>
-                      <a href="models.php" class="obj__button">Узнать подробнее</a>
+                      <a href="models.html" class="obj__button">Узнать подробнее</a>
                     </div>
                   </div>
                 </div>
@@ -284,7 +272,7 @@ if (check_auth()) {
                       <div class="obj__info">
                       Одно из самых любимых растений у цветоводов, так как неприхотливо в уходе. Оно относится к семейству Ароидных. Отличается от многих других комнатных растений своими большими листьями необычной формы. Оно может вырастать до 2 м в высоту. 
                       </div>
-                      <a href="models.php" class="obj__button">Узнать подробнее</a>
+                      <a href="models.html" class="obj__button">Узнать подробнее</a>
                     </div>
                   </div>
                   <div class="slider__obj">
@@ -299,7 +287,7 @@ if (check_auth()) {
 Листья короткочерешковые, могут достигать шестиметровой длины и сохраняются они лишь на самом верху пальмы. На листовой сложноперистой пластине растет множество узких листочков (очень жесткие).
 В природе произрастает на каменистых местностях.
                       </div>
-                      <a href="models.php" class="obj__button">Узнать подробнее</a>
+                      <a href="models.html" class="obj__button">Узнать подробнее</a>
                     </div>
                   </div>
                   <div class="slider__obj">
@@ -311,7 +299,7 @@ if (check_auth()) {
                       <div class="obj__info">
                       Это экзотическое плодовое растение относится к семейству бромелиевых. У этого растения линейные листочки, с зубчиками по краям. Листочки собираются в розетку, из которой и вырастает плод. Ананас в квартире  можетвырасти до 70 см в высоту. Во время цветения на нем образуются мелкие цветочки с большими прицветниками. Растение вечнозеленое, поэтому всегда будет украшать помещение своей экзотичностью.
                       </div>
-                      <a href="models.php" class="obj__button">Узнать подробнее</a>
+                      <a href="models.html" class="obj__button">Узнать подробнее</a>
                     </div>
                   </div>
                 </div>
@@ -342,32 +330,25 @@ if (check_auth()) {
                 </div>
               </div>
 
-
-
-        <?php ?>
-        <?php flash(); ?>
-
               <div class="order__input">
-              <form method="post" action="do_register.php"> 
                 <div class="order__input-name">
                   <input type="text" class="name-input" placeholder=" " />
-                  <label for="username" class="name-label">Ваше имя</label>
-                  <input type="text" class="form-control" id="username" name="username" required>
+                  <label for="" class="name-label">Ваше имя:</label>
                 </div>
                 <div class="order__input-mail">
                   <input type="text" class="mail-input" placeholder=" " />
-                  <label for="email" class="mail-label">Ваш Email</label>
-                  <input type="email" class="form-control" id="email" name="email" required>
+                  <label for="" class="mail-label">Ваш Email:</label>
+                </div>
+                <div class="order__input-mail">
+                  <input type="text" class="mail-input" placeholder=" " />
+                  <label for="" class="mail-label">Адрес доставки:</label>
                 </div>
                 <div class="order__input-comment">
-                  <input type="text" class="name-input" placeholder=" " />  
-                  <label for="comment" class="name-label">Комментарии к заказу</label>
-                  <input type="text" class="form-control" id="comment" name="comment" required>
+                  <input type="text" class="comment-input" placeholder=" " />
+                  <label for="" class="comment-label">Комментарий к заказу:</label>
                 </div>
-                <div class="d-flex justify-content-between">
-                <button type="submit" class="order__button">Отправить</button>
+                <button class="order__button">Отправить</button>
               </div>
-            <?php ?>
 
             </div>
           </div>
@@ -378,11 +359,11 @@ if (check_auth()) {
           <div class="footer__content">
             <div class="footer__nav">
               <ul class="nav__list">
-                <li class="nav__item"><a href="aboutUs.php">О нас</a></li>
-                <li class="nav__item"><a href="models.php">Модели</a></li>
-                <li class="nav__item"><a href="questions.php">Вопросы</a></li>
-                <li class="nav__item"><a href="service.php">Услуги</a></li>
-                <li class="nav__item"><a href="contacts.php">Контакты</a></li>
+                <li class="nav__item"><a href="aboutUs.html">О нас</a></li>
+                <li class="nav__item"><a href="models.html">Модели</a></li>
+                <li class="nav__item"><a href="questions.html">Вопросы</a></li>
+                <li class="nav__item"><a href="service.html">Услуги</a></li>
+                <li class="nav__item"><a href="contacts.html">Контакты</a></li>
               </ul>
             </div>
             <div class="footer__text">
