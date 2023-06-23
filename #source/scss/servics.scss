@@ -1,0 +1,75 @@
+@import "style.scss";
+
+.service {
+    &__content {
+        margin-top: 5%;
+        margin-bottom: -5%;
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 2%;
+        font-size: 2.2em;
+        font-family: Montserrat;
+        font-weight: 500;
+    }
+
+    &__subtitle {
+        margin-bottom: 5%;
+        font-family: Montserrat;
+        font-size: 1.3em;
+        color: rgb(85, 85, 85);
+    }
+
+    &__row {
+        border-radius: 30px;
+        box-shadow: 0 2px 16px rgba(0, 0, 0, 0.048);
+        padding: 30px 50px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto 5% auto;
+    }
+
+    &__column {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.column {
+    &__type {
+        flex: 0 1 25%;
+        margin-bottom: 2%;
+        font-size: 1.5em;
+        font-family: Montserrat;
+        font-weight: 500;
+        line-height: 1.5em;
+    }
+
+    &__list {
+        flex: 0 1 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        gap: 15px;
+        font-size: 0.9em;
+    }
+    &__price{
+        font-size: 1.5em;
+        font-family: Montserrat;
+        font-weight: 500;
+        text-align: right;
+        flex: 0 1 25%;
+    }
+}
+.list {
+    &__item {
+    }
+}
+.price {
+    &__subtitle {
+        font-size: 0.6em;
+        color: rgb(85, 85, 85);
+    }
+}

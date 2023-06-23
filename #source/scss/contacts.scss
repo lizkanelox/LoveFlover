@@ -1,0 +1,101 @@
+@import "style.scss";
+.wrapper{
+    display: grid;
+    grid-template-rows: auto 100% auto;
+}
+.contacts {
+    &__content {
+        margin: 5% 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        margin-top: 5%;
+        font-size: 25px;
+    }
+
+    &__phone {
+        
+    }
+
+    &__mail {
+    }
+
+    &__adress {
+        margin-bottom: 30px;
+    }
+
+    &__media {
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 25px;
+    }
+
+    &__info {
+    }
+}
+.phone {
+
+    &__title {
+        margin-bottom: 5px;
+    }
+
+    &__num {
+        font-weight: 500;
+        font-size: 27px;
+    }
+}
+.mail {
+
+    &__title {
+        margin-bottom: 5px;
+    }
+
+    &__mail {
+        font-weight: 500;
+        font-size: 27px;
+    }
+}
+.adress {
+
+    &__title {
+        margin-bottom: 5px;
+        font-size: 22px;
+    }
+
+    &__adress {
+        font-size: 22px;
+    }
+}
+.contacts-links {
+    display: flex;
+    align-items: center;
+    a{
+        width: 80px;
+        img{
+            width: 100%;
+        }
+    }
+}
+.info {
+    &__text {
+        margin-top: 5% ;
+        font-size: 22px;
+        p{
+            font-weight: 500;
+            padding-top: 20px;
+            font-size: 25px;
+        }
+    }
+}

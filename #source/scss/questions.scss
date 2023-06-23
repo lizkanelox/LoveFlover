@@ -1,0 +1,70 @@
+@import "style.scss";
+
+.quetsions {
+    &__accordion {
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+}
+.questions {
+    &__content{
+        margin-top: 5%;
+        text-align: center;
+    }
+    &__title {
+        margin-bottom: 3%;
+        font-size: 2.2em;
+        font-family: Montserrat;
+        font-weight: 500;
+    }
+}
+.accordion {
+    &__item {
+        margin: 0 auto;
+        width: 70%;
+    }
+}
+.item {
+    &__button {     
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 30px;
+        font-size: 1.5em;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        img{
+            width: 100%;
+        }
+        cursor: pointer;
+    }
+
+    &__content {
+        width: 85%;
+        margin: 10px auto;
+        max-height: 0;
+        overflow: hidden;
+        transition: all cubic-bezier(.25,.75,.5,1.25) 0.5s;
+        text-align: left;
+        line-height: 1.2em;
+    }
+}
+
+.button__img{
+    width: 50px;
+}
+
+
+.order {
+    &__question {
+        border: 2px solid rgb(172, 172, 172);
+        border-radius: 10px;
+        padding: 15px;
+        font-size: 1.1em;
+        width: 600px;
+        min-height: 150px;
+        resize: vertical;
+        margin-bottom: 30px;
+    }
+}
