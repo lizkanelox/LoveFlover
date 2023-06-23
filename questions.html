@@ -1,15 +1,3 @@
-<?php
-require_once __DIR__.'/boot.php';
-
-$user = null;
-
-if (check_auth()) {
-    // Получим данные пользователя по сохранённому идентификатору
-    $stmt = pdo()->prepare("SELECT * FROM `users` WHERE `id` = :id");
-    $stmt->execute(['id' => $_SESSION['user_id']]);
-    $user = $stmt->fetch(PDO::FETCH_ASSOC);
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,7 +18,7 @@ if (check_auth()) {
         <div class="container">
           <div class="header__content">
             <div class="header__logo">
-              <a href="index.php" class="header__logo">
+              <a href="index.html" class="header__logo">
                 <div class="logo__img">
                   <img src="images/logo2.jpg" alt="Logo" />
                 </div>
@@ -49,14 +37,14 @@ if (check_auth()) {
               </div>
               <div class="nav__menu">
                 <ul class="nav__list">
-                  <li class="nav__item"><a href="aboutUs.php">О нас</a></li>
-                  <li class="nav__item"><a href="models.php">Модели</a></li>
+                  <li class="nav__item"><a href="aboutUs.html">О нас</a></li>
+                  <li class="nav__item"><a href="models.html">Модели</a></li>
                   <li class="nav__item">
-                    <a href="questions.php">Вопросы</a>
+                    <a href="questions.html">Вопросы</a>
                   </li>
-                  <li class="nav__item"><a href="service.php">Услуги</a></li>
+                  <li class="nav__item"><a href="service.html">Услуги</a></li>
                   <li class="nav__item">
-                    <a href="contacts.php">Контакты</a>
+                    <a href="contacts.html">Контакты</a>
                   </li>
                 </ul>
               </div>
@@ -150,32 +138,21 @@ if (check_auth()) {
                 </div>
               </div>
 
-
-
-        <?php ?>
-        <?php flash(); ?>
-
               <div class="order__input">
-              <form method="post" action="do_register.php"> 
                 <div class="order__input-name">
                   <input type="text" class="name-input" placeholder=" " />
-                  <label for="username" class="name-label">Ваше имя</label>
-                  <input type="text" class="form-control" id="username" name="username" required>
+                  <label for="" class="name-label">Ваше имя:</label>
                 </div>
                 <div class="order__input-mail">
                   <input type="text" class="mail-input" placeholder=" " />
-                  <label for="email" class="mail-label">Ваш Email</label>
-                  <input type="email" class="form-control" id="email" name="email" required>
+                  <label for="" class="mail-label">Ваш Email:</label>
                 </div>
                 <div class="order__input-comment">
-                  <input type="text" class="name-input" placeholder=" " />  
-                  <label for="comment" class="name-label">Ваш вопрос</label>
-                  <input type="text" class="form-control" id="comment" name="comment" required>
+                  <input type="text" class="comment-input" placeholder=" " />
+                  <label for="" class="comment-label">Задайте ваш вопрос:</label>
                 </div>
-                <div class="d-flex justify-content-between">
-                <button type="submit" class="order__button">Отправить</button>
+                <button class="order__button">Отправить</button>
               </div>
-            <?php ?>
 
             </div>
           </div>
@@ -188,11 +165,11 @@ if (check_auth()) {
           <div class="footer__content">
             <div class="footer__nav">
               <ul class="nav__list">
-                <li class="nav__item"><a href="aboutUs.php">О нас</a></li>
-                <li class="nav__item"><a href="models.php">Модели</a></li>
-                <li class="nav__item"><a href="questions.php">Вопросы</a></li>
-                <li class="nav__item"><a href="service.php">Услуги</a></li>
-                <li class="nav__item"><a href="contacts.php">Контакты</a></li>
+                <li class="nav__item"><a href="aboutUs.html">О нас</a></li>
+                <li class="nav__item"><a href="models.html">Модели</a></li>
+                <li class="nav__item"><a href="questions.html">Вопросы</a></li>
+                <li class="nav__item"><a href="service.html">Услуги</a></li>
+                <li class="nav__item"><a href="contacts.html">Контакты</a></li>
               </ul>
             </div>
             <div class="footer__text">
