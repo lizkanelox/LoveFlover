@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LoveFlovers</title>
+    <link rel="stylesheet" href="css/servics.css" />
+    <link rel="shortcut icon" href="/images/logo2.jpg" type="image/png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <button id="toTop" class="">
+        <img src="images/up.svg" alt="Навверх" />
+      </button>
+      <div class="header">
+        <div class="container">
+          <div class="header__content">
+            <div class="header__logo">
+              <a href="index.php" class="header__logo">
+                <div class="logo__img">
+                  <img src="images/logo2.jpg" alt="Logo" />
+                </div>
+                <div class="logo__text">
+                  <div class="logo__name">LoveFlovers</div>
+                  <div class="logo__slogan">
+                    Подберем цветочек в каждый дом. <br /> С любовью
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="header__nav">
+              <div class="nav__info">
+                <div class="nav__number">+7 (000) 555-35-35</div>
+                <div class="nav__mail">loveflovers@gmail.com</div>
+              </div>
+              <div class="nav__menu">
+                <ul class="nav__list">
+                  <li class="nav__item"><a href="aboutUs.php">О нас</a></li>
+                  <li class="nav__item"><a href="models.php">Модели</a></li>
+                  <li class="nav__item">
+                    <a href="questions.php">Вопросы</a>
+                  </li>
+                  <li class="nav__item"><a href="service.php">Услуги</a></li>
+                  <li class="nav__item">
+                    <a href="contacts.php">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="service">
+            <div class="container">
+                <div class="service__content">
+                    <div class="service__title">Услуги</div>
+                    <div class="service__subtitle">Наша команда готова помочь Вам с уходом или пересадкой растений <br/><br/>
+                    А еще мы занимаемся профессиональным озеленением помещений
+                    </div>
+                    <div class="service__row">
+                        <div class="service__column">
+                            <div class="column__type">Разовые выезды специалиста</div>
+                            <ul class="column__list">
+                                <li class="list__item">— Пересадка растения (15% от стоимости)</li>
+                                <li class="list__item">— Профилактическая обработка</li>
+                                <li class="list__item">— Обрезка и формовка</li>
+                                <li class="list__item">— Внесение сбалансированных удобрений</li>
+                                <li class="list__item">— Избавление от вредителей</li>
+                                <li class="list__item">— Поддержание чистоты и полировку листьев, кашпо, аксессуаров</li>
+                                <li class="list__item">— Добавление и рыхление грунта с учетом особенностей растения</li>
+                            </ul>
+                            <div class="column__price">
+                                <div class="price__title">3500 р./выезд</div>
+                                <div class="price__subtitle"><br/>В стоимость услуги не входит <br/>грунт и дренаж</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__row">
+                        <div class="service__column">
+                            <div class="column__type">Сервисное обслуживание растений</div>
+                            <ul class="column__list">
+                                <li class="list__item">— Планомерный полив с учетом особенностей растений</li>
+                                <li class="list__item">— Обрезка и формовка</li>
+                                <li class="list__item">— Внесение сбалансированных удобрений</li>
+                                <li class="list__item">— Профилактическая обработка</li>
+                                <li class="list__item">— Избавление от вредителей</li>
+                                <li class="list__item">— Лечение растений</li>
+                                <li class="list__item">— Поддержание чистоты и полировку листьев, кашпо, аксессуаров</li>
+                                <li class="list__item">— Добавление и рыхление грунта с учетом особенностей растения</li>
+                                <li class="list__item">— Своевременная пересадка для благоприятного роста</li>
+                                <li class="list__item">— Гарантийная замена растений в случае гибели</li>
+                            </ul>
+                            <div class="column__price">
+                                <div class="price__title">14000 р./месяц</div>
+                                <div class="price__subtitle"><br/>Стоимость договора зависит<br/>от объема и частоты<br/>посещения специалиста</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service__row">
+                        <div class="service__column">
+                            <div class="column__type">Озеленение и Фитодизайн</div>
+                            <ul class="column__list">
+                                <li class="list__item">Мы профессионально занимаемся озеленением:</li>
+                                <li class="list__item">— Офисов</li>
+                                <li class="list__item">— Ресторанов</li>
+                                <li class="list__item">— Гостиниц</li>
+                                <li class="list__item">— Бизнес центров</li>
+                                <li class="list__item">— Квартир</li>
+                                <li class="list__item">— Домов</li>
+                            </ul>
+                            <div class="column__price">
+                                <div class="price__title">Составление<br/>индивидуальной сметы</div>
+                                <div class="price__subtitle"><br/>Стоимость услуги ограничивается<br/>только вашей фантазией</div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="order">
+            <div class="container">
+              <div class="order__title">Оформите заказ<p>Мы обязательно свяжемся с вами!</p></div>
+              <div class="order__content">
+                <div class="order__info">
+                  <div class="order__info-phone">+7 (000) 555-35-35</div>
+                  <div class="order__info-mail">loveflovers@gmail.com</div>
+                  <div class="order__info-adress">
+                    Москва, Лиственничная аллея, 2А
+                  </div>
+                  <div class="order__info-links">
+                    <a href="#"><img src="./images/telegram.svg" alt="" /></a>
+                    <a href="#"><img src="./images/vk.svg" alt="" /></a>
+                    <a href="#"><img src="./images/mail.svg" alt="" /></a>
+                  </div>
+                </div>
+                <div class="order__input">
+                  <div class="order__input-name">
+                    <input type="text" class="name-input" placeholder=" " />
+                    <label for="" class="name-label">Ваше имя:</label>
+                  </div>
+                  <div class="order__input-mail">
+                    <input type="text" class="mail-input" placeholder=" " />
+                    <label for="" class="mail-label">Ваш Email:</label>
+                  </div>
+                  <div class="order__input-comment">
+                    <input type="text" class="comment-input" placeholder=" " />
+                    <label for="" class="comment-label"
+                      >Комментарий к заказу:</label
+                    >
+                  </div>
+                  <button class="order__button">Отправить</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="footer">
+        <div class="container">
+          <div class="footer__content">
+            <div class="footer__nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a href="aboutUs.php">О нас</a></li>
+                <li class="nav__item"><a href="models.php">Модели</a></li>
+                <li class="nav__item"><a href="questions.php">Вопросы</a></li>
+                <li class="nav__item"><a href="service.php">Услуги</a></li>
+                <li class="nav__item"><a href="contacts.php">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer__text">
+              (almost) lizkanelox's work 2023/06
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="toTop.js"></script>
+  </body>
+</html>
